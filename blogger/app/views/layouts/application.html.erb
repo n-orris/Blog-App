@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blogger</title>
+    <title>Blog App</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,8 @@
   </head>
 
   <body>
+    <p class="flash"><%= flash.notice %></p>
+
     <%= yield %>
   </body>
 </html>
