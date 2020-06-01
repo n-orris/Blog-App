@@ -32,7 +32,6 @@ class ArticlesController < ApplicationController
         @article.destroy
         flash.notice = "Article Deleted!"
         redirect_to "/articles"
-
     end
 
     def edit
